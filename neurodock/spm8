@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#
+# SPM8 home directory
+#
+SPM8_STANDALONE_HOME=/usr/local/src/spm8-standalone-5236
+
+#
+# Start a new interactive shell for SPM8
+#
+exec "${SPM8_STANDALONE_HOME}/run_spm8.sh" "${SPM8_STANDALONE_HOME}/mcr/v713" ${1+"$@"}
