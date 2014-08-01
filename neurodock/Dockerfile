@@ -20,6 +20,7 @@ RUN apt-get install -y python-jinja2
 RUN apt-get install -y python-tornado
 RUN apt-get install -y python-sympy
 RUN apt-get install -y libfreetype6-dev
+RUN apt-get install -y apt-get install libxp6
 
 # Pip installs
 RUN pip install jsonschema
