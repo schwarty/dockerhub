@@ -11,16 +11,16 @@ RUN apt-get upgrade -y
 
 # Install packages
 RUN apt-get install -y git-core build-essential wget
-# RUN apt-get install -y python2.7-dev
-# RUN apt-get install -y cython
-# RUN apt-get install -y python-numpy
-# RUN apt-get install -y python-scipy
-# RUN apt-get install -y python-pip
-# RUN apt-get install -y python-zmq
-# RUN apt-get install -y python-jinja2
-# RUN apt-get install -y python-tornado
-# RUN apt-get install -y python-sympy
-# RUN apt-get install -y libfreetype6-dev
+RUN apt-get install -y python2.7-dev
+RUN apt-get install -y cython
+RUN apt-get install -y python-numpy
+RUN apt-get install -y python-scipy
+RUN apt-get install -y python-pip
+RUN apt-get install -y python-zmq
+RUN apt-get install -y python-jinja2
+RUN apt-get install -y python-tornado
+RUN apt-get install -y python-sympy
+RUN apt-get install -y libfreetype6-dev
 
 # # Pip installs
 # RUN pip install jsonschema
