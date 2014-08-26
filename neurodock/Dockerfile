@@ -31,9 +31,6 @@ RUN python setup.py install
 WORKDIR /build/joblib
 RUN python setup.py install
 
-WORKDIR /build/ipython
-RUN python setup.py install
-
 # Install SPM
 
 WORKDIR /
