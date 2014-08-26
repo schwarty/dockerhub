@@ -20,8 +20,8 @@ RUN apt-get install -y python-zmq
 RUN apt-get install -y python-jinja2
 RUN apt-get install -y python-tornado
 RUN apt-get install -y python-sympy
-RUN pat-get install -y python-jsonschema
-RUN pat-get install -y python-json-pointer
+RUN apt-get install -y python-jsonschema
+RUN apt-get install -y python-json-pointer
 RUN apt-get install -y libfreetype6-dev
 
 # Install Python libraries from source
