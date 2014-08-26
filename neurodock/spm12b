@@ -1,0 +1,11 @@
+#!/bin/sh
+
+#
+# SPM12 home directory
+#
+SPM12_STANDALONE_HOME=/usr/local/src/spm12b
+
+#
+# Start a new interactive shell for SPM8
+#
+exec "${SPM12_STANDALONE_HOME}/run_spm12b.sh" "${SPM12_STANDALONE_HOME}/../mcr/v713" ${1+"$@"}
