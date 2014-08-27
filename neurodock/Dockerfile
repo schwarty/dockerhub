@@ -28,9 +28,6 @@ RUN python setup.py install
 WORKDIR /build/nilearn
 RUN python setup.py install
 
-WORKDIR /build/joblib
-RUN python setup.py install
-
 # Install SPM
 
 WORKDIR /
