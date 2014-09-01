@@ -19,6 +19,11 @@ RUN git clone https://github.com/nilearn/nilearn.git
 
 RUN echo "building..."
 
+WORKDIR /
+
+RUN mkdir build
+WORKDIR build
+
 WORKDIR /build/nibabel
 RUN python setup.py install
 
@@ -29,11 +34,6 @@ WORKDIR /build/nilearn
 RUN python setup.py install
 
 # Install SPM
-
-WORKDIR /
-
-RUN mkdir build
-WORKDIR build
 
 ENV SPM_DIR /build/spm12b/spm12b_mcr/spm12b
 ENV SPM_MCR /usr/local/bin/spm12b
