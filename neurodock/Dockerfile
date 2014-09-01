@@ -13,16 +13,16 @@ RUN apt-get install -y libxp6 libxpm4 libxmu6 libxt6
 RUN apt-get install -y bc
 RUN apt-get install -y unzip
 
+WORKDIR /
+
+RUN mkdir build
+WORKDIR build
+
 RUN git clone https://github.com/nipy/nibabel.git
 RUN git clone https://github.com/nipy/nipy.git
 RUN git clone https://github.com/nilearn/nilearn.git
 
 RUN echo "building..."
-
-WORKDIR /
-
-RUN mkdir build
-WORKDIR build
 
 WORKDIR /build/nibabel
 RUN python setup.py install
